@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * @file Example took from react query.
  * @url https://tanstack.com/query/latest/docs/framework/react/quick-start
