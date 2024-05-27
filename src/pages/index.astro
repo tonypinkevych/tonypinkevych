@@ -34,10 +34,8 @@ const posts = (await getCollection('blog')).filter((post) => isProd ? post.data.
 											<FormattedDate date={post.data.pubDate} />
 										</p>
 
-										<p>{post.data.description}</p>
+										<p>{post.data.description}...</p>
 									</div>
-
-									<p>Continue...</p>
 								</a>
 							</li>
 						))
