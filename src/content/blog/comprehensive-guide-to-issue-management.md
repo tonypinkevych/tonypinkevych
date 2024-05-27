@@ -3,7 +3,6 @@ title: 'Comprehensive guide to issue management and workflow in small-medium siz
 description: 'hi'
 pubDate: 'May 25 2024'
 published: false
-heroImage: '/blog-placeholder-3.jpg'
 ---
 
 1. цикл сборки всевозможных проблем в проекте;
