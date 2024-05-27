@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
 
 :root {
   --accent: #2337ff;
@@ -12,11 +12,10 @@
     0 8px 24px rgba(var(--gray), 33%), 0 16px 32px rgba(var(--gray), 33%);
 }
 body {
-  font-family: "Merriweather", serif;
+  font-family: 'Merriweather', serif;
 }
 main {
-  max-width: 720px;
-  @apply px-6 sm:px-12 py-1 mx-auto;
+  @apply px-6 sm:px-12 py-1 mx-auto max-w-3xl;
 }
 th {
   @apply text-left;
