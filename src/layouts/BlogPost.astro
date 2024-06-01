@@ -4,7 +4,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 
-type Props = CollectionEntry<'blog'>['data'];
+type Props = CollectionEntry<'en'>['data'];
 
 const { title, description } = Astro.props;
 ---
@@ -17,7 +17,7 @@ const { title, description } = Astro.props;
 	<body>
 		<Header />
 		<main>
-			<article>
+			<article class="min-h-[70vh] prose prose-sm mt-16">
 				<slot />
 			</article>
 		</main>
