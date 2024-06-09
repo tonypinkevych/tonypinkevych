@@ -38,23 +38,26 @@ The manifest describes how we work and collaborate on the code.
 2. **Ship it fast**
    <br />
    Instead of a perfect solution with full coverage of all possible edge cases, use a good enough solution to solve the current problem and move on;
-3. **Create failing tests before start working on the issue**
+
+## Tests
+
+1. **Create failing tests before start working on the issue**
    <br />
    This way we make sure we have good test coverage;
-4. **Test the behavior, not the implementation**
+2. **Test the behavior, not the implementation**
    <br/>
    So our tests are sutstainable;
-5. **Use fact-based names for tests**
+3. **Use fact-based names for tests**
    <br />
    The test name should describe what it does, e.g. `include all declared properties` instead how it does it;
-6. **Tests as documentation**
+4. **Tests as documentation**
    <br />
    The code quality of the tests should be high enough for us to treat them as documentation;
-7. **Tests are first class citizens**
+5. **Tests are first class citizens**
    <br />
    All critical paths of code should have test coverage.
 
-## New feature
+## New feature/idea
 
 1. **Show rather than tell**
    <br />
