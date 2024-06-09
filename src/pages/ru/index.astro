@@ -22,12 +22,12 @@ const posts = (await getCollection('ru')).filter((post) => isProd ? post.data.pu
 		<Header />
 		<main>
 			<section class="py-8">
-				<ul class="flex flex-col gap-8">
+				<ul class="flex flex-col gap-16">
 					{
 						posts.map((post) => (
 							<li>
 								<a href={`/ru/${post.slug}/`} class="text-black flex flex-col gap-2">
-									<h4 class="text-3xl">{post.data.title}</h4>
+									<h4 class="text-3xl font-bold">{post.data.title}</h4>
 
 									<div>
 										<p>
