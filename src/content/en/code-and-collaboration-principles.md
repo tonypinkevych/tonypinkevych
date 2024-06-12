@@ -1,4 +1,5 @@
 ---
+type: post
 title: 'Code and Collaboration principles'
 description: 'The manifest describes how we work and collaborate on the code'
 pubDate: 'Jun 01 2024'

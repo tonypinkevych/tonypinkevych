@@ -12,6 +12,11 @@ export async function getStaticPaths() {
 type Props = CollectionEntry<'ru'>;
 
 const post = Astro.props;
+
+if (post.data.type === 'redirect') {
+  return Astro.redirect(post.data.url, 301)
+}
+
 const { Content } = await post.render();
 ---
 

@@ -1,4 +1,5 @@
 ---
+type: post
 title: 'Comprehensive guide to issue management and workflow in small-medium sized technical teams'
 description: 'hi'
 pubDate: 'May 25 2024'

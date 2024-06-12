@@ -1,4 +1,5 @@
 ---
+type: post
 title: 'Как пройти код ревью'
 description: 'hi'
 pubDate: 'May 31 2024'

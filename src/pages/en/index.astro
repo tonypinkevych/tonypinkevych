@@ -8,7 +8,7 @@ import FormattedDate from '../../components/FormattedDate.astro';
 
 const isProd = import.meta.env.PROD
 
-const posts = (await getCollection('ru')).filter((post) => isProd ? post.data.published : true).sort(
+const posts = (await getCollection('en')).filter((post) => isProd ? post.data.published : true).sort(
 	(left, right) => right.data.pubDate.valueOf() - left.data.pubDate.valueOf()
 );
 ---
@@ -27,7 +27,7 @@ const posts = (await getCollection('ru')).filter((post) => isProd ? post.data.pu
 						posts.map((post) => (
 							<li>
 								<a
-                  href={post.data.type === 'redirect' ? post.data.url : `/ru/${post.slug}/`}
+                  href={post.data.type === 'redirect' ? post.data.url : `/en/${post.slug}/`}
                   class="text-black flex flex-col gap-2"
                   target={post.data.type === 'redirect' ? "_blank" : undefined}
                 >
