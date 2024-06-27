@@ -6,7 +6,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 import { getCollection } from 'astro:content';
 import FormattedDate from '../../components/FormattedDate.astro';
 
-const isProd = import.meta.env.PROD
+const isProd = import.meta.env.PROD;
 
 const posts = (await getCollection('ru')).filter((post) => isProd ? post.data.published : true).sort(
 	(left, right) => right.data.pubDate.valueOf() - left.data.pubDate.valueOf()
