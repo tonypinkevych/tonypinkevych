@@ -31,9 +31,9 @@ const ru = defineCollection({
   schema,
 })
 
-const ua = defineCollection({
+const publications = defineCollection({
   type: 'content',
   schema,
 })
 
-export const collections = { en, ru, ua }
+export const collections = { en, ru, publications }
