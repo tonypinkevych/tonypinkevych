@@ -54,7 +54,7 @@ type Book = {
 const Books: React.FC = () => {
   const { data: books, isLoading } = useGetBooks()
   const { mutateAsync: deleteBook } = useDeleteBook()
-+  const [books] = React.useState(Books)
++  const [books] = React.useState(new Books())
 
   if (isLoading) {
     return <p>Loading...</p>
