@@ -29,6 +29,8 @@ jobs:
         run: npm ci
 
       - name: Build
+        env:
+          PUBLIC_GOOGLE_ANALYTICS_ID: ${{ secrets.PUBLIC_GOOGLE_ANALYTICS_ID }}
         run: npm run build
 
       - name: Upload artifact
