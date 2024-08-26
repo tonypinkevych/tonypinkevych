@@ -3,3 +3,4 @@
 
 export const SITE_TITLE = "Tony Pinkevych's blog"
 export const SITE_DESCRIPTION = 'Welcome to my personal blog'
+export const SITE_URL = 'https://tonypinkevych.com'
