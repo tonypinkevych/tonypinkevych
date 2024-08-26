@@ -14,9 +14,15 @@ export async function GET() {
     '',
     'ru',
     'publications',
-    ...posts.map((post) => `en/${post.slug}`),
-    ...ruPosts.map((post) => `ru/${post.slug}`),
-    ...publications.map((post) => `publications/${post.slug}`),
+    ...posts
+      .filter((post) => post.data.published)
+      .map((post) => `en/${post.slug}`),
+    ...ruPosts
+      .filter((post) => post.data.published)
+      .map((post) => `ru/${post.slug}`),
+    ...publications
+      .filter((post) => post.data.published)
+      .map((post) => `publications/${post.slug}`),
   ]
 
   const sitemap = `
